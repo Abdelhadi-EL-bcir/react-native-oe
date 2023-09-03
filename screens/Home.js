@@ -10,9 +10,11 @@ export default function Home({navigation}) {
   }
 
   return (
-    <View>
+    <View >
       <Text>home</Text>
-      <Button color={'red'} backgroundColo='red' style={styles.button} title='test' onPress={hundlePress}/>
+      <View style={styles.button}>
+      <Button color={'red'} backgroundColo='red'  title='test' onPress={hundlePress}/>
+      </View>
     </View>
   );
 }
@@ -21,8 +23,9 @@ export default function Home({navigation}) {
 const styles = StyleSheet.create({
   button: {
     color: '#fff',
-    backgroundColor: 'red',
-    margin : 20
+    alignItems : 'center',
+    justifyContent : 'center',
+    width : '100%'
   },
 });
 

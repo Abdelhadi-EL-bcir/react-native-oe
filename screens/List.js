@@ -27,7 +27,7 @@ export default function List() {
   useEffect(() => {
     axios
       .get(
-        "https://www.googleapis.com/blogger/v3/blogs/6393315864780645527/posts?maxResults=3&key=AIzaSyARMci7Ly0Gct3GdvedC0RvEkIkJxPp8us"
+        "https://www.googleapis.com/blogger/v3/blogs/6393315864780645527/posts?maxResults=10&key=AIzaSyARMci7Ly0Gct3GdvedC0RvEkIkJxPp8us"
       )
       .then(function (response) {
         setList(response.data.items);
@@ -46,6 +46,7 @@ export default function List() {
       });
   }, []);
 
+  
   return (
     <View>
       <SafeAreaView />

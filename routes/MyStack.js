@@ -3,10 +3,11 @@ import { createAppContainer } from 'react-navigation';
 import Home from '../screens/Home';
 import List from '../screens/List';
 import { createStackNavigator } from 'react-navigation-stack';
+import Welcome from '../screens/Welcome';
 
 const screens = {
   Home : {
-     screen : Home
+     screen : Welcome
   },
   List : {
      screen: List
